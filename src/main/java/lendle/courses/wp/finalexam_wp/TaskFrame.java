@@ -6,6 +6,8 @@
 package lendle.courses.wp.finalexam_wp;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -37,6 +39,10 @@ public class TaskFrame extends JInternalFrame {
         this.setSize(500, 300);
         //Q4: layout 出如圖所示的樣子，
         //記得 JTextArea 要放在捲軸裡面 (30%)
+        FlowLayout layout= new FlowLayout();
+        layout.setHgap(50);
+        layout.setVgap(50);
+        layout.setAlignment(FlowLayout.LEFT);
         ////////////////////////////
         this.setClosable(true);
         this.setResizable(true);
