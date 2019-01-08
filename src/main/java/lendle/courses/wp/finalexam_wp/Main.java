@@ -5,10 +5,13 @@
  */
 package lendle.courses.wp.finalexam_wp;
 
+import java.awt.BorderLayout;
 import javax.swing.DefaultListModel;
 import javax.swing.JDesktopPane;
+import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
+import javax.swing.WindowConstants;
 
 /**
  *
@@ -115,7 +118,13 @@ public class Main extends javax.swing.JFrame {
         model.addElement(title);
         //Q2: 建立 TaskFrame（等同於 JInternalFrame）
         //加到 jDesktopPane1 (20%)
-        
+        TaskFrame taskFrame=new TaskFrame();
+        taskFrame.setSize(300,300);
+        taskFrame.setVisible(true);
+        taskFrame.setMaximizable(true);
+        taskFrame.setIconifiable(true);
+        taskFrame.setResizable(true);
+        taskFrame.setContentPane(jDesktopPane1);
         ///////////////////////////////////////
     }//GEN-LAST:event_buttonNewActionPerformed
 
@@ -134,7 +143,13 @@ public class Main extends javax.swing.JFrame {
             //Q3: 建立 TaskFrame（等同於 JInternalFrame）
             //設定 noteTitle, noteContent
             //加到 jDesktopPane1 (20%)
-            
+            TaskFrame taskFrame=new TaskFrame();
+            taskFrame.setSize(300,300);
+            taskFrame.setVisible(true);
+            taskFrame.setMaximizable(true);
+            taskFrame.setIconifiable(true);
+            taskFrame.setResizable(true);
+            taskFrame.setContentPane(jDesktopPane1);
             //////////////////////////////////////////
         }
     }//GEN-LAST:event_jList1MouseClicked
