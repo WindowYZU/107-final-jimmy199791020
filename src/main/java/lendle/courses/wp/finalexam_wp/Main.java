@@ -6,6 +6,7 @@
 package lendle.courses.wp.finalexam_wp;
 
 import javax.swing.DefaultListModel;
+import javax.swing.JDesktopPane;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 
@@ -106,7 +107,7 @@ public class Main extends javax.swing.JFrame {
         DefaultListModel model = (DefaultListModel) this.jList1.getModel();
         if (model.contains(title)) {
             //Q1: 開啟 message dialog （10%）
-            
+            JOptionPane.showInternalMessageDialog(getContentPane(), "不可以重複");
             ////////////////////
             return;
         }
