@@ -6,6 +6,7 @@
 package lendle.courses.wp.finalexam_wp;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
@@ -74,7 +75,9 @@ public class TaskFrame extends JInternalFrame {
             @Override
             public void internalFrameClosing(InternalFrameEvent e) {
                 if (modified) {
+                    Component InternalFrameEvent = null;
                     //Q5: 發現變更，顯示 confirm dialog 詢問是否要儲存 (20%)
+                    int result=JOptionPane.showConfirmDialog(InternalFrameEvent, "Confirm?", "test", JOptionPane.YES_NO_CANCEL_OPTION,JOptionPane.WARNING_MESSAGE);
                     int ret = -1;
                     /////////////////////////////////////////////
                     if (ret == JOptionPane.YES_OPTION) {
